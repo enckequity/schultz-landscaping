@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #2D5A27;
+  --color-primary-light: #3A7332;
+  --color-primary-dark: #1E3D1A;
+  --color-secondary: #78716C;
+  --color-secondary-light: #A8A29E;
+  --color-accent: #D97706;
+  --color-accent-light: #F59E0B;
+  --color-accent-dark: #B45309;
+  --color-bg: #FAFAF7;
+  --color-bg-alt: #F1F0EB;
+  --color-bg-dark: #1C1917;
+  --color-text: #292524;
+  --color-text-light: #57534E;
+  --color-text-muted: #78716C;
+  --color-white: #FFFFFF;
+  --color-border: #E7E5E4;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --space-section: clamp(64px, 8vw, 120px);
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-primary-light: var(--color-primary-light);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-light: var(--color-secondary-light);
+  --color-accent: var(--color-accent);
+  --color-accent-light: var(--color-accent-light);
+  --color-accent-dark: var(--color-accent-dark);
+  --color-bg: var(--color-bg);
+  --color-bg-alt: var(--color-bg-alt);
+  --color-bg-dark: var(--color-bg-dark);
+  --color-surface: var(--color-white);
+  --color-text: var(--color-text);
+  --color-text-light: var(--color-text-light);
+  --color-text-muted: var(--color-text-muted);
+  --color-border: var(--color-border);
+  --font-heading: var(--font-bitter);
+  --font-body: var(--font-nunito-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), Georgia, serif;
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
