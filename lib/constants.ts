@@ -119,51 +119,6 @@ export const SERVICES: Service[] = [
   },
 ]
 
-export interface Testimonial {
-  name: string
-  location: string
-  text: string
-  service: string
-  rating: number
-}
-
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    name: "Jason T.",
-    location: "Mount Vernon, OH",
-    text: "They poured our patio and driveway the same week. Concrete looks perfect and the price was fair. Will be calling them back for the retaining wall.",
-    service: "Concrete Patio & Driveway",
-    rating: 5,
-  },
-  {
-    name: "Sarah M.",
-    location: "Centerburg, OH",
-    text: "We needed landscaping and a new walkway done before our daughter's graduation party. Schultz knocked it out in three days. Yard looked amazing and guests kept asking who did the work.",
-    service: "Landscaping & Concrete Walkway",
-    rating: 5,
-  },
-  {
-    name: "Mike R.",
-    location: "Sunbury, OH",
-    text: "Had them build a retaining wall along our back slope. No more mud washing into the yard every time it rains. Solid work, showed up on time every day.",
-    service: "Retaining Wall",
-    rating: 5,
-  },
-  {
-    name: "Karen L.",
-    location: "Fredericktown, OH",
-    text: "Got a stamped concrete patio put in last fall. Neighbors thought it was real flagstone. Crew was polite and cleaned up after themselves which I really appreciated.",
-    service: "Stamped Concrete Patio",
-    rating: 5,
-  },
-  {
-    name: "Dave & Linda P.",
-    location: "Johnstown, OH",
-    text: "Hired them for a complete front yard redo — new mulch beds, shrubs, edging, and a concrete pad for the trash cans. Looks like a different house now. Reasonable price too.",
-    service: "Full Landscaping",
-    rating: 5,
-  },
-]
 
 export const SERVICE_AREAS = [
   { name: "Centerburg", description: "Our home base in the heart of Ohio. Serving our neighbors with landscaping and concrete work they can count on." },
@@ -238,29 +193,19 @@ export const FAQS: FAQ[] = [
 export const NAV_LINKS = [
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Reviews", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
+  { label: "Areas", href: "#service-areas" },
   { label: "Contact", href: "#contact" },
 ] as const
 
 export const IMAGES = {
   hero: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80",
   about: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-  gallery: [
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-    "https://images.unsplash.com/photo-1600566753376-12c8ab7c870f?w=800&q=80",
-    "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80",
-    "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
-    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80",
-  ],
-  cta: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80",
 } as const
 
 export const STATS = [
   { value: 5.0, label: "Google Rating", suffix: "★", isDecimal: true },
-  { value: 200, label: "Projects Completed", suffix: "+", isDecimal: false },
-  { value: 15, label: "Service Areas", suffix: "+", isDecimal: false },
-  { value: 100, label: "Satisfaction Rate", suffix: "%", isDecimal: false },
+  { value: 9, label: "Services Offered", suffix: "", isDecimal: false },
+  { value: 18, label: "Service Areas", suffix: "+", isDecimal: false },
+  { value: 3, label: "Counties Served", suffix: "", isDecimal: false },
 ]
