@@ -98,17 +98,6 @@ export function Header() {
 
               <a
                 href={COMPANY.phoneHref}
-                className={`hidden md:inline-flex items-center justify-center px-5 py-2.5 rounded-md text-sm font-semibold transition-all duration-200 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] ${
-                  scrolled
-                    ? "bg-accent text-white hover:shadow-accent/25"
-                    : "bg-accent text-white hover:shadow-accent/25"
-                }`}
-              >
-                Free Estimate
-              </a>
-
-              <a
-                href={COMPANY.phoneHref}
                 className="sm:hidden flex items-center justify-center w-10 h-10 rounded-md bg-accent text-white"
                 aria-label="Call us"
               >

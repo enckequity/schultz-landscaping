@@ -85,7 +85,7 @@ export function Hero() {
               href="#services"
               className="inline-flex items-center gap-2 px-7 py-4 border-2 border-white/30 text-white rounded-md text-base font-semibold transition-all duration-200 hover:bg-white hover:text-text hover:border-white active:scale-[0.98]"
             >
-              See Our Work
+              View Services
             </a>
           </motion.div>
 
